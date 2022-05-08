@@ -1,0 +1,23 @@
+.clientFormInput {
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    width: 200px;
+    height: 40px;
+}
+
+.premium {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.inputGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+    align-items: center;
+}
+
+.inputGroupLeft {
+    text-align: right;
+}

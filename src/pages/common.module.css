@@ -1,0 +1,9 @@
+.centered {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 100px;
+}
