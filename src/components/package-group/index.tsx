@@ -12,7 +12,7 @@ const PackageGroup: FC<IPackageGroupProps> = ({packages, onChange}) => (
         {
             packages.map((pkg: IPackage, index: number) => (
                 <div key={index}>
-                    <input type="radio" name="package" onChange={onChange} defaultChecked={ (!index) } value={pkg.value}/>{pkg.label}
+                    <input type="radio" name="package" onChange={onChange} required={true} value={pkg.value}/>{pkg.label}
                 </div>)
             )
         }
