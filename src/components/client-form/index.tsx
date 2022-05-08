@@ -16,6 +16,8 @@ const MAX_AGE = 100;
 
 const ClientForm: FC<IClientFormProps> = () => {
     const [age, setAge] = useState<number>(0);
+    const [name, setName] = useState<string>("");
+    const [pkg, setPkg] = useState<string>("");
     const [countryName, setCountryName] = useState<string>("");
     const navigate = useNavigate();
 
@@ -23,6 +25,10 @@ const ClientForm: FC<IClientFormProps> = () => {
         if (age > MAX_AGE){
             e.preventDefault();
             navigate("/age-error");
+        } else {
+            navigate("/summary", {state: {
+                name, age, countryName, pkg
+            }});
         }
     }
 
@@ -30,21 +36,29 @@ const ClientForm: FC<IClientFormProps> = () => {
         setAge(parseInt(e.target.value));
     }
 
+    const onChangeName = (e: ChangeEvent<HTMLInputElement>) => {
+        setName(e.target.value);
+    }
+
     const onChangeCountry = (e: ChangeEvent<HTMLSelectElement>) => {
         setCountryName(e.target.value);
     }
 
+    const onChangePackage = (e: ChangeEvent<HTMLInputElement>) => {
+        setPkg(e.target.value);
+    }
+
     return  (
-        <form onSubmit={onSubmit} action={"/summary"} className={styles.formContainer}>
+        <form onSubmit={onSubmit} className={styles.formContainer}>
             <div className={styles.inputGroup}>
                     <label className={styles.inputGroupLeft} htmlFor="name">Name</label>
-                    <input className={styles.clientFormInput} id="name" type="text" placeholder="Add text" name={"name"} required={true}/>
+                    <input className={styles.clientFormInput} id="name" type="text" placeholder="Add text" name={"name"} onChange={onChangeName} required={true}/>
                     <label className={styles.inputGroupLeft} htmlFor="age">Age</label>
                     <input className={styles.clientFormInput} type="number" id="age" name="age" onChange={onChangeAge} value={age}/>
                     <label className={styles.inputGroupLeft} htmlFor="country">Where do you live</label>
                     <SelectCountry countries={getCountries()} onChange={onChangeCountry}/>
                     <div></div>
-                    <PackageGroup packages={getPackages()}/>
+                    <PackageGroup packages={getPackages()} onChange={onChangePackage}/>
             </div>
 
             <p className={styles.premium}>Your premium is: {Package.calculatePremium(countryName, age)}</p>
