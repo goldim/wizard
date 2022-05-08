@@ -51,14 +51,14 @@ const ClientForm: FC<IClientFormProps> = () => {
     return  (
         <form onSubmit={onSubmit} className={styles.formContainer}>
             <div className={styles.inputGroup}>
-                    <label className={styles.inputGroupLeft} htmlFor="name">Name</label>
-                    <input className={styles.clientFormInput} id="name" type="text" placeholder="Add text" name={"name"} onChange={onChangeName} required={true}/>
-                    <label className={styles.inputGroupLeft} htmlFor="age">Age</label>
-                    <input className={styles.clientFormInput} type="number" id="age" name="age" onChange={onChangeAge} value={age}/>
-                    <label className={styles.inputGroupLeft} htmlFor="country">Where do you live</label>
-                    <SelectCountry countries={getCountries()} onChange={onChangeCountry}/>
-                    <div></div>
-                    <PackageGroup packages={getPackages()} onChange={onChangePackage}/>
+                <label className={styles.inputGroupLeft} htmlFor="name">Name</label>
+                <input className={styles.clientFormInput} id="name" type="text" placeholder="Add text" name={"name"} onChange={onChangeName} required={true}/>
+                <label className={styles.inputGroupLeft} htmlFor="age">Age</label>
+                <input className={styles.clientFormInput} type="number" id="age" name="age" onChange={onChangeAge} value={age}/>
+                <label className={styles.inputGroupLeft} htmlFor="country">Where do you live</label>
+                <SelectCountry countries={getCountries()} onChange={onChangeCountry}/>
+                <div></div>
+                <PackageGroup packages={getPackages()} onChange={onChangePackage}/>
             </div>
 
             <p className={styles.premium}>Your premium is: {Package.calculatePremium(countryName, age)}</p>

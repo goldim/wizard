@@ -2,7 +2,7 @@ import styles from "./common.module.css"
 import NavButton from "../components/nav-button";
 
 const StartPage = () => (
-    <div className={styles.content}>
+    <div className={styles.page}>
         <h1>Hello There!</h1>
         <p>Let's buy some insurance. It is going to take only a few steps</p>
         <p>
