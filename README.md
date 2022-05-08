@@ -1,7 +1,7 @@
 # wizard
 Demo test assignment
 
-#deployment
+# deployment
 Go to https://goldim.github.io/wizard/ . There is an error.
 Just click homepage. It is problem with GitHub and gh pages.
 To solve it I have to do some tricks or ignore.
