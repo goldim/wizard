@@ -16,9 +16,9 @@ function App() {
                     <main>
                     <Routes>
                         <Route path="/" element={<StartPage/>} />
-                        <Route path="/client" element={<ClientPage/>} />
-                        <Route path="/summary" element={<SummaryPage/>} />
-                        <Route path="/age-error" element={<AgeErrorPage/>} />
+                        <Route path="client" element={<ClientPage/>} />
+                        <Route path="summary" element={<SummaryPage/>} />
+                        <Route path="age-error" element={<AgeErrorPage/>} />
                         <Route path="*" element={<Page404/>} />
                     </Routes>
                     </main>
