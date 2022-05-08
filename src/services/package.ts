@@ -1,7 +1,7 @@
 import countries from "../utils/countries.json";
 import packages from "../utils/packages.json";
 
-interface ICountry {
+export interface ICountry {
     name: string,
     rate: number,
     code: string

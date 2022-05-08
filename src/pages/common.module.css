@@ -1,11 +1,3 @@
-.formContainer{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .centered {
     text-align: center;
 }
@@ -14,27 +6,4 @@
     text-align: center;
     background-color: #f6f6f6;
     padding: 100px;
-}
-
-.pageButton {
-    color: white;
-    cursor: pointer;
-    font-size: 1.1em;
-    background-color: black;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-}
-
-.clientFormInput {
-    margin-left: 10px;
-    padding-left: 10px;
-    font-size: 1.1em;
-    width: 200px;
-    height: 40px;
-}
-
-.premium {
-    font-weight: bold;
-    font-size: 1.5em;
 }

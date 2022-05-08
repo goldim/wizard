@@ -1,8 +1,8 @@
-import {Link} from 'react-router-dom'
 import styles from "./common.module.css";
 import {useEffect, useState} from "react";
 import BackButton from "../components/back-button";
 import {Package} from "../services/package";
+import NavButton from "../components/nav-button";
 
 const SummaryPage = () => {
     const [age, setAge] = useState<any>();
@@ -28,7 +28,7 @@ const SummaryPage = () => {
             <p>Premium: {Package.calculatePremium(!country ? "": country, age)}</p>
             <p className={styles.centered}>
                 <BackButton to={"/client"}/>
-                <Link to={"/"}><button className={styles.pageButton}>Buy</button></Link>
+                <NavButton to={"/"}>Buy</NavButton>
             </p>
         </div>
     );

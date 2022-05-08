@@ -1,0 +1,9 @@
+.navButton {
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
