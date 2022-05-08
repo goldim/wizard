@@ -1,6 +1,11 @@
 # wizard
 Demo test assignment
 
+#deployment
+Go to https://goldim.github.io/wizard/ . There is an error.
+Just click homepage. It is problem with GitHub and gh pages.
+To solve it I have to do some tricks or ignore.
+
 # toolkit
 For this assignment I chose React framework and used template
 from React Burger Application. React Burger was my diploma work
