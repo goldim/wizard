@@ -1,14 +1,14 @@
 # wizard
 Demo test assignment
 
-#toolkit
+# toolkit
 For this assignment I chose React framework and used template
 from React Burger Application. React Burger was my diploma work
 in React Developer Course (Code you can find in my GitHub account).
 For page routing I used react-router library (version 6).
 For this assignment I used Typescript and JS es6.
 
-#project structure
+# project structure
 All code in src folder.
 src/pages folder contains pages. There are 5 pages:
 1. start (where app start)
@@ -30,9 +30,9 @@ Next I could replace them with remote API.
 In the folder are some classes and functions like 
 calculate premium.
 
-#approaches
+# approaches
 Routing is described in components/app/app.tsx.
 I tried maximum follow DRY approach and a lot of refactoring.
 
-#unit-tests
+# unit-tests
 Some tests were written with jests
