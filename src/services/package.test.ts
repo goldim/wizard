@@ -1,7 +1,7 @@
 import {Package} from "./package";
 
 describe("Package.calculatePremium", () => {
-    test("normal", () => {
+    test("not existing country", () => {
         const premium = Package.calculatePremium("NotExistentCountry", 30);
         expect(premium).toBe("0");
     });
