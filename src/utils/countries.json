@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hong Kong",
+    "rate": 1,
+    "code": "HKD"
+  },
+  {
+    "name": "USA",
+    "rate": 2,
+    "code": "USD"
+  },
+  {
+    "name": "Australia",
+    "rate": 3,
+    "code": "AUD"
+  }
+]

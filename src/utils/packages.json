@@ -1,0 +1,14 @@
+[
+  {
+    "value": "Standard",
+    "label": "Standard"
+  },
+  {
+    "value": "Safe",
+    "label": "Safe (+250HKD, 50%)"
+  },
+  {
+    "value": "Super Safe",
+    "label": "Super Safe (+375HKD, 75%)"
+  }
+]
