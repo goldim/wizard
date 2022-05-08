@@ -11,16 +11,6 @@
     font-size: 1.5em;
 }
 
-.pageButton {
-    color: white;
-    cursor: pointer;
-    font-size: 1.1em;
-    background-color: black;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-}
-
 .inputGroup {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

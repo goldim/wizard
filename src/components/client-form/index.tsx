@@ -1,4 +1,5 @@
 import styles from "./client-form.module.css";
+import navButtonStyles from "../nav-button/nav-button.module.css"
 
 import {useNavigate} from "react-router-dom";
 import {ChangeEvent, FC, FormEvent, useState} from "react";
@@ -49,7 +50,7 @@ const ClientForm: FC<IClientFormProps> = () => {
             <p className={styles.premium}>Your premium is: {Package.calculatePremium(countryName, age)}</p>
             <p>
                 <BackButton to={"/"}/>
-                <button type="submit" className={styles.pageButton}>Next</button>
+                <button type="submit" className={navButtonStyles.navButton}>Next</button>
             </p>
         </form>
     );
